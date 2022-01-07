@@ -23,12 +23,8 @@ def get_teams_list():
 def main():
     games = []
     
-    with open('live-fixed.json') as input_data:
-        live_data = json.load(input_data)
-    input_data.close()
-
     #Uncomment to get real data
-    #live_data = get_live_data()
+    live_data = get_live_data()
 
     teams = get_teams_list()
     
